@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+	@RestController
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@RequestMapping("/categoria")
 	public class CategoriaController {
@@ -39,10 +39,10 @@ import org.springframework.web.bind.annotation.RestController;
 			
 		}
 
-		@GetMapping ("/medicamento{medicamento}")
+		@GetMapping ("/medicamento/{medicamento}")
 		public ResponseEntity<List<Categoria>> getByName(@PathVariable String medicamento){
 			
-			return ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(medicamento));
+			return ResponseEntity.ok(repository.findAllByMedicamentoContainingIgnoreCase(medicamento));
 			
 					
 		}

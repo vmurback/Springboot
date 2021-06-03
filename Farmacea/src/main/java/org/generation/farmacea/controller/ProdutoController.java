@@ -41,7 +41,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 			@GetMapping("/nome/{nome}")
 			public ResponseEntity<List<Produto>> GetByNome(@PathVariable String nome) {
-				return ResponseEntity.ok(repositoty.findAllByNMedicamentoContainingIgnoreCase(nome));
+				return ResponseEntity.ok(repositoty.findAllByNomeContainingIgnoreCase(nome));
 
 			}
 
