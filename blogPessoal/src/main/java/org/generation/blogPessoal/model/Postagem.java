@@ -32,7 +32,7 @@ public class Postagem {
 	private String texto;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date data = new java.sql.Date(System.currentTimeMillis());
+	private Date dat = new java.sql.Date(System.currentTimeMillis());
 
 	@ManyToOne
 	@JsonIgnoreProperties("postagem")
@@ -62,12 +62,12 @@ public class Postagem {
 		this.texto = texto;
 	}
 
-	public Date getData() {
-		return data;
+	public Date getDat() {
+		return dat;
 	}
 
-	public void setData(Date data) {
-		this.data = data;
+	public void setDat(Date data) {
+		this.dat = data;
 	}
 
 	public Tema getTema() {
