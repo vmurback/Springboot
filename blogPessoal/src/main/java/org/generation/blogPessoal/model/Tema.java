@@ -21,6 +21,9 @@ public class Tema {
 	private long id;
 
 	@NotNull
+	private String tema;
+
+	@NotNull
 	private String descricao;
 
 	@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
@@ -49,6 +52,16 @@ public class Tema {
 
 	public void setPostagem(List<Postagem> postagem) {
 		this.postagem = postagem;
+	}	
+
+	public String getTema() {
+		return this.tema;
 	}
+
+	public void setTema(String tema) {
+		this.tema = tema;
+	}
+
+	
 
 }

@@ -14,9 +14,9 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 	
 	public Usuario findFirstByNome(String nome);
 	
-	public List<Usuario> findAllByUsuario(String usuario);
+	//public List<Usuario> findAllByUsuario(String usuario);
 	
-	public Optional<Usuario> findAllByName(String nome);
+	//public Optional<Usuario> findAllByName(String nome);
 
 	public List<Usuario> findAllByNomeIgnoreCaseContaining(String nome);
 

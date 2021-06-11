@@ -29,7 +29,7 @@ public class Usuario {
 	private String senha;
 	
 	
-	public Usuario() {}
+	public Usuario () {}
 
 	public Usuario(String nome, String usuario, String senha) {
 		this.nome = nome;
